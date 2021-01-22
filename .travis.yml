@@ -5,7 +5,7 @@ node_js:
 cache: npm
 branches:
   only:
-    - main # 只监听master分支的push
+    - main # 只监听main分支的push
 script:
   - hexo generate # 自动化构建的脚本
 deploy:
@@ -15,3 +15,4 @@ deploy:
   keep-history: true
   on:
     branch: main
+    local-dir: public
